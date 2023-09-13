@@ -3,6 +3,7 @@ package de.wyraz.tibberuploader.tibber;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.TreeMap;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class InternalAccountInfoResponse {
