@@ -4,6 +4,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.TreeMap;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 class InternalAccountInfoResponse {
 
 	public static String METER_REGISTER_ID="1-0:1.8.0";
