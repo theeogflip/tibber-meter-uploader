@@ -52,6 +52,10 @@ class InternalAccountInfoResponse {
 
 			if (homes!=null) {
 				for (AccountInfoHome home: homes) {
+					//Small Fix for 2nd Home
+				if(home.address.addressText.contains("jan")){
+						continue;
+					}
 					home.unwrap(info);
 				}
 				
